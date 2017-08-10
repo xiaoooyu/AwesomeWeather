@@ -1,10 +1,40 @@
+source 'https://github.com/CocoaPods/Specs.git'
+react_native_path = '../node_modules/react-native'
+
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
-
+# The target name is most likely the name of your project
 target 'AwesomeWeatheriOS' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+
+  # Third party deps
+  # the third-party dependency pods need to be explicitly included in the Podfile
+  #
+  # Refs
+  # https://github.com/facebook/react-native/issues/14612
+  # https://github.com/mhorowitz/native-navigation-boilerplate/blob/0cb090c6d67ffcb3b47b51e2f06a4253635ef797/ios/Podfile#L13-L16
+
+  pod 'DoubleConversion', :podspec => react_native_path + '/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => react_native_path + '/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
+
+  # Your 'node_modules' directory is probably in the root of your project
+  # but if not, adjust the `:path` accordingly
+  pod 'React', :path => react_native_path, :subspecs => [
+    'Core',
+    'CxxBridge', # Include this for RC >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # needed for debugging
+    # Add any other subspecs you want to use in your project
+
+  ]
+
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod "Yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
 
   # Pods for AwesomeWeatheriOS
 
