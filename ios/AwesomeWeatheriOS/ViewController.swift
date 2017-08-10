@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import React
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func weatherButtonPressed(sender : UIButton) {
+        NSLog("Weather button pressed")
+    
+        let jsCodeLocation = URL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+        
+        let rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: "AwesomeWeather", initialProperties: nil, launchOptions: nil)
+        
+        let vc = UIViewController()
+        vc.view = rootView
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
