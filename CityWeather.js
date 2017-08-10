@@ -48,7 +48,7 @@ export class WeatherIndicator extends Component {
       <View style={{flex:1}}>
 
         <View style={{flex:1, flexDirection:'row'}}>
-          <WeatherImageView condition={this.props.condition} width="100" height="100" />
+          <WeatherImageView condition={this.props.condition} width="80" height="80" />
           <Text style={{fontSize:26}}>{this.props.condition.temp}°{this.props.units.temperature}</Text>
         </View>
       </View>
