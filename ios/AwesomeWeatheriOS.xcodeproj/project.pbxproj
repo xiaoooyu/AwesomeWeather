@@ -12,6 +12,8 @@
 		4B5B18B81F3BFEFD00733582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B18B61F3BFEFD00733582 /* Main.storyboard */; };
 		4B5B18BA1F3BFEFD00733582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B18B91F3BFEFD00733582 /* Assets.xcassets */; };
 		4B5B18BD1F3BFEFD00733582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B18BB1F3BFEFD00733582 /* LaunchScreen.storyboard */; };
+		4B9E8BFC1F430F5F0032BE63 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E8BFB1F430F4C0032BE63 /* main.jsbundle */; };
+		4B9E8BFD1F430F5F0032BE63 /* main.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E8BFA1F430F4C0032BE63 /* main.jsbundle.meta */; };
 		7F8920C333E23A33E932F57E /* Pods_AwesomeWeatheriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E92FF49FC877346690438E /* Pods_AwesomeWeatheriOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		4B5B18B91F3BFEFD00733582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5B18BC1F3BFEFD00733582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5B18BE1F3BFEFD00733582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9E8BFA1F430F4C0032BE63 /* main.jsbundle.meta */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.jsbundle.meta; sourceTree = "<group>"; };
+		4B9E8BFB1F430F4C0032BE63 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		BB46CBB41101E964AE9D1E82 /* Pods-AwesomeWeatheriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeWeatheriOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeWeatheriOS/Pods-AwesomeWeatheriOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E2E92FF49FC877346690438E /* Pods_AwesomeWeatheriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeWeatheriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4489FD403CDEAE9B6D47A7F /* Pods-AwesomeWeatheriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeWeatheriOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeWeatheriOS/Pods-AwesomeWeatheriOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		4B5B18B11F3BFEFD00733582 /* AwesomeWeatheriOS */ = {
 			isa = PBXGroup;
 			children = (
+				4B9E8BFB1F430F4C0032BE63 /* main.jsbundle */,
+				4B9E8BFA1F430F4C0032BE63 /* main.jsbundle.meta */,
 				4B5B18B21F3BFEFD00733582 /* AppDelegate.swift */,
 				4B5B18B41F3BFEFD00733582 /* ViewController.swift */,
 				4B5B18B61F3BFEFD00733582 /* Main.storyboard */,
@@ -151,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9E8BFC1F430F5F0032BE63 /* main.jsbundle in Resources */,
+				4B9E8BFD1F430F5F0032BE63 /* main.jsbundle.meta in Resources */,
 				4B5B18BD1F3BFEFD00733582 /* LaunchScreen.storyboard in Resources */,
 				4B5B18BA1F3BFEFD00733582 /* Assets.xcassets in Resources */,
 				4B5B18B81F3BFEFD00733582 /* Main.storyboard in Resources */,

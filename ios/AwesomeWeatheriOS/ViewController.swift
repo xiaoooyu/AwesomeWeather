@@ -24,7 +24,11 @@ class ViewController: UIViewController {
     @IBAction func weatherButtonPressed(sender : UIButton) {
         NSLog("Weather button pressed")
     
-        let jsCodeLocation = URL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+        // OPTION 1.
+//        let jsCodeLocation = URL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+        
+        // OPTION 2.
+        let jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")
         
         let rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: "AwesomeWeather", initialProperties: nil, launchOptions: nil)
         
